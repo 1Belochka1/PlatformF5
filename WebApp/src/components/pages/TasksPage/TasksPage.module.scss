@@ -1,0 +1,12 @@
+.wrapper {
+	@apply flex flex-col gap-10;
+	> .buttons {
+		@apply flex flex-wrap gap-3 bg-primary p-2 justify-center items-center;
+		> .tabNavItem {
+			@apply text-[16px] font-medium list-none cursor-pointer select-none;
+		}
+		> .active {
+			@apply p-1 rounded-sm bg-secondary text-textPrimary;
+		}
+	}
+}

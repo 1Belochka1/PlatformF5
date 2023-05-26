@@ -1,0 +1,44 @@
+.wrapper {
+	@apply bg-background text-[18px] text-textSecondary;
+
+	> form {
+		@apply flex flex-col gap-4;
+		> .title {
+			@apply text-[30px];
+			word-break: break-all;
+		}
+		> .description {
+			word-break: break-all;
+			> textarea {
+				@apply w-full h-40 p-3 rounded-xl;
+				resize: none;
+			}
+		}
+		> .row {
+			@apply flex flex-wrap justify-center items-center gap-3;
+			> .date {
+				> input {
+					@apply customInput;
+				}
+			}
+			> .status {
+				@apply flex flex-col gap-1 items-center;
+				> select {
+					@apply customInput;
+				}
+			}
+			> .user {
+				@apply flex flex-col gap-1 items-center;
+				> select {
+					@apply customInput;
+				}
+			}
+		}
+		> .updateBtn {
+			@apply btn-primary text-[18px];
+		}
+		> .deleteBtn {
+			@apply btn-primary hover:bg-red-600 hover:text-white;
+		}
+	}
+}

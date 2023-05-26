@@ -1,0 +1,10 @@
+.wrapper {
+	@apply flex flex-col gap-5;
+	> .content {
+		@apply px-5 pb-5;
+	}
+}
+.wrapperContentCenter {
+	@apply flex justify-center items-center;
+	height: 100vh;
+}

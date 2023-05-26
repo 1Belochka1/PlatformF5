@@ -1,0 +1,36 @@
+.wrapper {
+	@apply items-center text-textSecondary text-[1.125rem];
+	> form {
+		@apply flex flex-col gap-3 items-center;
+
+		> div {
+			// @apply flex md:flex-row flex-col flex-wrap items-center justify-center gap-1;
+			@apply w-96;
+		}
+		> .login {
+		}
+		> .password {
+		}
+		> .idRole {
+			@apply flex flex-col gap-1 items-center;
+			> select {
+				@apply customInput w-96;
+			}
+		}
+		> .surname {
+		}
+		> .name {
+		}
+		> .patronymic {
+		}
+		> .email {
+		}
+		> .phone {
+		}
+		> .submit {
+			> input {
+				@apply btn-primary w-96;
+			}
+		}
+	}
+}

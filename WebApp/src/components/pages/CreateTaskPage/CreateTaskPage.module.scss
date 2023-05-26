@@ -1,0 +1,26 @@
+.wrapper {
+	@apply flex flex-col items-center gap-7;
+	@apply text-[18px] text-textSecondary;
+
+	> .title {
+		@apply w-96;
+	}
+	> .description {
+		> textarea {
+			@apply customInput w-96 h-32;
+			resize: none;
+		}
+	}
+	> .deadline {
+		@apply w-96;
+	}
+	> .idUser {
+		@apply w-96 flex flex-col gap-1 text-center;
+		> select {
+			@apply customInput;
+		}
+	}
+	> .createTask {
+		@apply btn-primary w-60;
+	}
+}

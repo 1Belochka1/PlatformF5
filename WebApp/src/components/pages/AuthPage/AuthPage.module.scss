@@ -1,0 +1,23 @@
+.wrapper {
+	@apply w-96 flex items-center justify-center;
+	> .auth {
+		@apply bg-secondary p-10 rounded-xl;
+		@apply text-textPrimary;
+		> .title {
+			@apply text-[28px] text-textPrimary font-semibold;
+			@apply sm:text-[44px];
+			@apply mb-5;
+		}
+		> .form {
+			@apply flex flex-col gap-5;
+			> div {
+				> span {
+					@apply text-[28px];
+				}
+			}
+			.logInBtn {
+				@apply btn-primary;
+			}
+		}
+	}
+}

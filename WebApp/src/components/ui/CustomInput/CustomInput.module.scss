@@ -1,0 +1,9 @@
+.wrapper {
+	@apply flex flex-1 flex-col gap-1;
+	> span {
+		@apply text-center;
+	}
+	> input {
+		@apply customInput w-full;
+	}
+}

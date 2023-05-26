@@ -1,0 +1,31 @@
+.wrapper {
+	@apply flex flex-col items-center gap-7;
+
+	@apply text-[18px];
+	> .login {
+	}
+	> .updatePassword {
+		> div {
+			@apply btn-primary mb-1;
+		}
+		> form {
+			@apply flex flex-col gap-2;
+			> input {
+				@apply customInput;
+				&[type='submit'] {
+					@apply btn-primary;
+				}
+			}
+		}
+	}
+	> .surname {
+	}
+	> .name {
+	}
+	> .patronymic {
+	}
+	> .email {
+	}
+	> .phone {
+	}
+}

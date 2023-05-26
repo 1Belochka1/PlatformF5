@@ -1,0 +1,15 @@
+.wrapper {
+	@apply rounded-xl p-3 bg-primary flex flex-col gap-3 text-[16px] text-textSecondary;
+	> .title {
+		@apply text-[20px];
+	}
+	> .deleteBtn {
+		@apply p-3 rounded-lg bg-red-600 hover:bg-red-700 text-textPrimary text-center select-none cursor-pointer;
+
+		transition: all 0.4s ease;
+	}
+	> .noBtn {
+		@apply p-3 rounded-lg bg-secondary hover:bg-secondary/50 text-textPrimary text-center select-none cursor-pointer;
+		transition: all 0.4s ease;
+	}
+}

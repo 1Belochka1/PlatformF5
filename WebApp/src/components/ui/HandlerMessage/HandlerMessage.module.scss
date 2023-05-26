@@ -1,0 +1,40 @@
+.wrapper {
+	@apply flex w-full items-center justify-center;
+	> .general {
+		animation: height 0.4s normal;
+		@apply p-2 text-textPrimary rounded-md text-center;
+	}
+	> .error {
+		@apply bg-red-500;
+	}
+	> .success {
+		@apply bg-green-500;
+	}
+	> .loading {
+		@apply bg-primary text-textSecondary;
+		animation: loading 1s infinite alternate;
+	}
+	> .message {
+		@apply bg-primary text-textSecondary;
+	}
+	@keyframes loading {
+		0% {
+			opacity: 0.5;
+			width: 100px;
+		}
+		100% {
+			font-size: 20px;
+			width: 170px;
+			opacity: 1;
+		}
+	}
+
+	@keyframes height {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.wrapper {
+	@apply rounded-md p-3 bg-primary flex flex-col gap-3 text-[16px] text-textSecondary;
+	> .title {
+		@apply text-[20px];
+		word-break: break-all;
+	}
+	> .description {
+		word-break: break-all;
+	}
+}
